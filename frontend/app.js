@@ -8,7 +8,7 @@ async function sendMood() {
     }
 
     try {
-        const response = await fetch("http://localhost:8000/mood", {
+        const response = await fetch("https://mood-diary.zeabur.app/mood", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ mood })
